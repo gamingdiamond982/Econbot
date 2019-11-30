@@ -33,8 +33,7 @@ This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/
 | **get_account_balance(id, server)** | Integer | Gets the current amount of money a certain user account holds. | No |
 | **auth_level(id, server)** | Integer | Gets the authorization level of the user in that server. Returns 0 if they don't have any special authorization, 1 if they are an admin and 2 if it's a developer. | No |
 
-**add_local_admin(id, server)**
-
+**add_local_admin(id, server)** /n
 Adds a local admin to one server
  
 **add_lock(id, server, lock_level, time)**
