@@ -1,5 +1,5 @@
 # Econbot
-This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/r/SimDemocracy) and Co.
+This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/r/SimDemocracy).
 
 ## Backend Types
 | Argument Name | Type |
@@ -34,11 +34,12 @@ This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/
 | **auth_level(id, server)** | Integer | Gets the authorization level of the user in that server. Returns 0 if they don't have any special authorization, 1 if they are an admin and 2 if it's a developer. | No |
 
 **add_local_admin(id, server)**
-adds a local admin to one server
+Adds a local admin to one server
  
 **add_lock(id, server, lock_level, time)**
-id, server is int
-level is int
+Id, server is int
+
+Level is int
 time is int in seconds
 
 **lock_level(id, server)**
