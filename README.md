@@ -34,7 +34,7 @@ This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/
 | **auth_level(id, server)** | Integer | Gets the authorization level of the user in that server. Returns 0 if they don't have any special authorization, 1 if they are an admin and 2 if it's a developer. | No |
 
 **add_local_admin(id, server)**
-pretty obvious
+adds a local admin to one server
  
 **add_lock(id, server, lock_level, time)**
 id, server is int
