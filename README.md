@@ -1,5 +1,5 @@
 # Econbot
-This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/r/SimDemocracy) and Co.
+This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/r/SimDemocracy).
 
 ## Backend Types
 | Argument Name | Type |
@@ -34,57 +34,69 @@ This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/
 | **auth_level(id, server)** | Integer | Gets the authorization level of the user in that server. Returns 0 if they don't have any special authorization, 1 if they are an admin and 2 if it's a developer. | No |
 
 **add_local_admin(id, server)**
-adds a local admin to one server
+
+Adds a local admin to one server
  
 **add_lock(id, server, lock_level, time)**
-id, server is int
-level is int
-time is int in seconds
+
+id and server are int
+
+lock_evel is int
+
+time is an int in seconds
 
 **lock_level(id, server)**
-grabs the lock level of a user
-0 is unlocked
-1 is frozen I think and 2 is locked by user
-but you have no reason to run this
+
+Grabs the lock level of a user
+
+0 is unlocked, 1 is frozen (I think), and 2 is locked by user
+
+You have no reason to run this
 
 **is_locked(id, server)**
-both string
-amazing
+
+They are both strings, checks if a server is locked
 
 **list_servers()**
-only useful for developer commands but you likely wont need to run it
+
+Only useful for developer commands, lists the servers
 
 **list_accounts(server)**
-maybe useful
-but likely not
+
+Lists the accounts on a server
 
 **uncheck_get_govt_balance(server)**
-you wont need this
+
+You won't need this
  
 **server_name_by_id(server)**
-useless for you because you already know the name
+
+Tells you the name of the server by it's id
 
 **currency_name(server)**
-self explainatory
+
+Tells you the currency name of the money on one particular server
  
 **id_to_uuid(id)**
-doubt you'll need this
+
+Boubt you'll need this
 
 **get_id_type(id)**
-definetly useless, it will always return "discord_id" for you
+
+Definetly useless, it will always return "discord_id" for you
 
 **name_exists(name)**
-checks the auth table if that name is a registered user
-returns a boolean
+
+Checks the auth table if that name is a registered user, returns a boolean
 
 **account_exists(name, server)**
-well
-obvious
-return booleans
+
+Checks if an account exists. It returns a boolean
 
 **id_exists(id, server)**
-obvious too
-also a boolean
+
+It checks if an id exists, and returns a boolean
 
 **open_db(path)**
+
 use this and I will kill you
