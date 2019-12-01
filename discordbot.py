@@ -13,6 +13,8 @@ client = discord.Client()
 
 prefix = "e;" # The prefix
 
+server = "simdem" # Just a placeholder, IDK simdem's server name id thing
+
 # The Progam
 
 @client.event
@@ -21,7 +23,7 @@ async def on_message(message): # When a message on a channel the bot can see is 
     await message.channel.send("Hello " + message.author.mention)
   if message.content == prefix + "balance":
     try:
-      
+      get_account_balance(message.author.id, server)
     except:
       await message.channel.send("An error has occured. Are you sure you have an account made?")
   # The help command
