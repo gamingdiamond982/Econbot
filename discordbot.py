@@ -19,7 +19,11 @@ prefix = "e;" # The prefix
 async def on_message(message): # When a message on a channel the bot can see is put out
   if message.content == prefix + "hello": # Just some test stuff
     await message.channel.send("Hello " + message.author.mention)
-  if message.content == prefix + "
+  if message.content == prefix + "balance":
+    try:
+      
+    except:
+      await message.channel.send("An error has occured. Are you sure you have an account made?")
   # The help command
     
   if message.content == prefix + "help":
