@@ -1,0 +1,3 @@
+Find out SimDem's server id
+
+Make the help command
