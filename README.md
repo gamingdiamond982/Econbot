@@ -36,7 +36,7 @@ This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/
 | **add_lock(id, server, lock_level, time)** | | Locks an account for a set amount of time. | No |
 | **lock_level(id, server)** | Integer | Gets how an account is locked (if it is at all). 0 is unlocked, 1 is frozen (by government), and 2 is locked by the user. It is encouraged to use is_locked though. | No |
 | **is_locked(id, server)** | Boolean | Checks if an user account was locked. | No |
-| **list_servers()** | Tuple | Lists all existing servers. | No |
+| **list_servers()** | Array | Lists all existing servers. Each entry in the output is a tuple of the server name and a empty string. | No |
 | **list_accounts(server)** | Tuple | Lists all existing accounts in a server. | No |
 | **uncheck_get_govt_balance(server)** | Integer | Gets the current amount of money a certain government account holds. Will not run check_print() on the server. | Yes |
 | **server_name_by_id(server)** | String | Gets the servers name by the servers ID. (Not useful, because the frontend already knows the name!) | Yes |
