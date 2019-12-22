@@ -47,3 +47,4 @@ This is the repo for the Economy Bot in [r/SimDemocracy](https://www.reddit.com/
 | **account_exists(name, server)** | Boolean | Checks if a user with a certain name has an account in a specific server. | No |
 | **id_exists(id, server)** | Boolean | Checks if a user with a certain id has an account in a specific server. | No |
 | **\_open_db(path)** | sqlite3.database | Opens a database. **DO NOT USE** | Yes |
+| **\_close_db(path)** | | Closes a database. **DO NOT USE** | Yes |
