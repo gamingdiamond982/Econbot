@@ -21,6 +21,8 @@ server = "simdem" # Just a placeholder, IDK simdem's server id
 async def on_message(message): # When a message on a channel the bot can see is put out
   if message.content == prefix + "balance":
     try:
+      balance = str(get_account_balance(message.author.id, server))
+      message.channel.send('Your balance is ' + balance)
       print(str(get_account_balance(message.author.id, server)))
     except:
       await message.channel.send("An error has occured. Are you sure you have an account made?")
