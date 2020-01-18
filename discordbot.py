@@ -13,7 +13,7 @@ client = discord.Client()
 
 prefix = "ee" # The prefix
 
-server = "simdem" # Just a placeholder, IDK simdem's server id
+server = "554769523635650580" # Just a placeholder, IDK simdem's server id
 
 # The Progam
 
